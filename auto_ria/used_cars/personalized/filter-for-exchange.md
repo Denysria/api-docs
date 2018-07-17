@@ -9,9 +9,9 @@ https://developers.ria.com/auto/used/autos/advertisementId/exchangeFilters?user_
 , где *user_id* - Ваш ID в системе RIA.com, *advertisementId* - ID нужного Вам объявления, *api_key* - Ваш ключ.
 
 **Пример запроса**
-
-`curl -X GET "https://developers.ria.com/auto/used/autos/20438832/exchangeFilters?user_id=7069830&api_key=YOUR_API_KEY" -H "accept: application/json"`
-
+````javascript
+curl -X GET "https://developers.ria.com/auto/used/autos/20438832/exchangeFilters?user_id=7069830&api_key=YOUR_API_KEY" -H "accept: application/json"
+`````
 **Пример успешного ответа:**
 
 ````json

@@ -13,7 +13,7 @@
 - **reason_id**=**7** - Я передумал продавать автомобиль
 
 **Пример запроса**
-
-`curl -X DELETE "https://developers.ria.com/auto/used/autos/20460133?user_id=7069830&reason_id=7&api_key=YOUR_API_KEY" -H "accept: application/json"`
-
+````javascript
+curl -X DELETE "https://developers.ria.com/auto/used/autos/20460133?user_id=7069830&reason_id=7&api_key=YOUR_API_KEY" -H "accept: application/json"`
+`````
  Полное описание сервиса "Удаление объявления" описаный с помощью стандарта **DeFacto swagger 2.0** [здесь](http://swagger.ria.com/ui/?api=auto/advertisements#/)

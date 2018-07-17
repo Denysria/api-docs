@@ -7,9 +7,9 @@
 , где  *advertisementId* - ID нужного Вам объявления, *api_key* - Ваш ключ.
 
 **Пример запроса**
-
-'https://developers.ria.com/auto/fotos/19860101?api_key=YOUR_API_KEY'
-
+````javascript
+https://developers.ria.com/auto/fotos/19860101?api_key=YOUR_API_KEY'
+````
 **Пример успешного ответа:**
 
 ````json

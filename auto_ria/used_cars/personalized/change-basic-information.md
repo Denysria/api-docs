@@ -1,9 +1,9 @@
 ### Изменение основной информации объявлений
 
 Для изменения основной информации объявления, Вам необходимо отправить **PUT** запрос такого вида:
-
-`curl -X PUT "https://developers.ria.com/auto/used/autos/advertisementId?user_id=Ваш ID&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json"  -d "{ \  \  }`
-
+````javascript
+curl -X PUT "https://developers.ria.com/auto/used/autos/advertisementId?user_id=Ваш ID&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json"  -d "{ \  \  }
+````
 , где *user_id* - Ваш ID в системе RIA.com, *advertisementId* - ID нужного Вам объявления, *`-d "{ \  \  }`* - здесь Вы указываете массив параметров которые хотите поменять,  *api_key* - Ваш ключ.
 
  Детально с параметрами и структурой можно ознакомиться [здесь](#user-content-Структура-параметров)
@@ -11,13 +11,13 @@
 **Пример запроса**
 
 Допустим Вам нужно изменить цену и валюту в которой вы продаете ваш автомобиль. Данный запрос будет иметь следующий вид:
-
-`curl -X PUT "https://developers.ria.com/auto/used/autos/20438832?user_id=7069830&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json" -d "{ \"price\": { \"value\":10000, \"currency\": { \"id\":1 } }}"`
-
+````javascript
+curl -X PUT "https://developers.ria.com/auto/used/autos/20438832?user_id=7069830&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json" -d "{ \"price\": { \"value\":10000, \"currency\": { \"id\":1 } }}"
+`````
 или изменить главное фото объявления, данный запрос будет иметь следующий вид:
-
-`curl -X PUT "https://developers.ria.com/auto/used/autos/20438832?user_id=7069830&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json" -d "{  \"photos\": { \"main\": { \"id\": 16652206 } }}"`
-
+````javascript
+curl -X PUT "https://developers.ria.com/auto/used/autos/20438832?user_id=7069830&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json" -d "{  \"photos\": { \"main\": { \"id\": 16652206 } }}"
+`````
 Объект *price* включает в себя параметры *value* - значение, *currency* - ID валюты в которой вы продаете ваш автомобиль, в нашем случаи это доллар.
 
 **Пример успешного ответа:**
