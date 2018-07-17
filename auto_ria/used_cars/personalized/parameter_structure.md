@@ -1070,7 +1070,7 @@
 
 <td align="left">boolean</td>
 
-<td align="left">Авто на запчасти</td>
+<td align="left">Авто на  запчасти</td>
 
 <td align="left">false</td>
 
@@ -1078,4 +1078,4 @@
 
 </tbody>
 
-</table>
+</table> 
