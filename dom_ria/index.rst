@@ -8,5 +8,6 @@ DOM.RIA
    options/index
    house-characteristics
    information
+   average_price
    search
    state_cities_region/index

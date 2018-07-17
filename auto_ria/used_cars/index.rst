@@ -10,3 +10,4 @@ AUTO.RIA б.у авто
    search
    average-price
    info
+   personalized/index
