@@ -8,7 +8,7 @@
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    parameter_structure
    used_ad
