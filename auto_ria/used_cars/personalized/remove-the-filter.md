@@ -1,9 +1,9 @@
 ### Удаление существующего фильтра на обмен
 
 Для удаления существующего фильтра на обмен, Вам необходимо выполнить DELETE запрос такого вида:
-
-`curl -X DELETE "https://developers.ria.com/auto/used/autos/advertisementId/exchangeFilter/filterId?user_id=Ваш ID&api_key=c" -H "accept: application/json"`
-
+````javascript
+curl -X DELETE "https://developers.ria.com/auto/used/autos/advertisementId/exchangeFilter/filterId?user_id=Ваш ID&api_key=c" -H "accept: application/json"`
+`````
 , где *user_id* - Ваш ID в системе RIA.com, *advertisementId* - ID нужного Вам объявления, *filterId* - ID выбраного Вами фильтра, *api_key* - Ваш ключ.
 
 **Пример запроса**

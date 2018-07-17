@@ -1,9 +1,9 @@
 ### Добавление обьявления
 
 Чтобы добавить  объявления, Вам необходимо выполнить POST запрос такого вида:
-
-`curl -X POST "https://developers.ria.com/auto/used/autos/?user_id=Ваш ID&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json" -d "{ \  \ }"`
-
+````javascript
+curl -X POST "https://developers.ria.com/auto/used/autos/?user_id=Ваш ID&api_key=YOUR_API_KEY" -H "accept: application/json" -H "content-type: application/json" -d "{ \  \ }"`
+````
 , где *user_id* - Ваш ID в системе RIA.com,  *`-d "{ \  \  }`* - здесь Вы указываете массив параметров которые хотите добавить,  *api_key* - Ваш ключ.
 
 Объявления по умолчанию добавляются в черновики, чтобы опубликовать их, Вам нужно зайти в свой личный кабинет на AUTO.RIA

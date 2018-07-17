@@ -1,9 +1,9 @@
 ### Удаление объявления
 
 Для удаления объявления, Вам необходимо отправить **DELETE** запрос такого вида:
-
-`curl -X DELETE "https://developers.ria.com/auto/used/autos/advertisementId?user_id=Ваш ID&reason_id=id причины удаления&api_key=YOUR_API_KEY" -H "accept: application/json"`
-
+````javascript
+curl -X DELETE "https://developers.ria.com/auto/used/autos/advertisementId?user_id=Ваш ID&reason_id=id причины удаления&api_key=YOUR_API_KEY" -H "accept: application/json"
+`````
 , где *user_id* - Ваш ID в системе RIA.com, *advertisementId* - ID нужного Вам объявления, *reason_id* - причина удаления, *api_key* - Ваш ключ.
 
 **reason_id** состоит из 4 категорий:
