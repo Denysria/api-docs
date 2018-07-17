@@ -204,7 +204,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'APIUmbrella.tex', u'RIA.com Documentation',
+  ('index', 'RIA.com.tex', u'RIA.com Documentation',
    u'RIA.com Documentation', 'manual'),
 ]
 
@@ -233,9 +233,9 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-#man_pages = [
-    ('index', 'apiumbrella', u'API Umbrella Documentation',
-     [u'National Renewable Energy Laboratory'], 1)
+man_pages = [
+    ('index', 'RIA.com', u'RIA.com Documentation',
+     [u'RIA.com Documentation'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -247,9 +247,9 @@ latex_documents = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-#texinfo_documents = [
-  ('index', 'APIUmbrella', u'API Umbrella Documentation',
-   u'National Renewable Energy Laboratory', 'APIUmbrella', 'One line description of project.',
+texinfo_documents = [
+  ('index', 'RIA.com', u'RIA.com Documentation',
+   u'RIA.com Documentation', 'RIA.com ', 'One line description of project.',
    'Miscellaneous'),
 ]
 
