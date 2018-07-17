@@ -4,8 +4,10 @@
 
 https://developers.ria.com/dom/info/**id_объявления**?api_key=YOUR_API_KEY
 
-или  `curl -i -X GET "https://developers.ria.com/dom/info/id_объявления?api_key=YOUR_API_KEY"`
-
+или  
+````javascript
+curl -i -X GET "https://developers.ria.com/dom/info/id_объявления?api_key=YOUR_API_KEY"
+````
 Полное описание сервиса "Информация по id объявления" описанный с помощью стандарта DeFacto swagger 2.0 [здесь](http://swagger.ria.com/ui/?api=dom/options)
 
 Допусти Вам нужна информация по _13825265_ id.
@@ -14,8 +16,10 @@ https://developers.ria.com/dom/info/**id_объявления**?api_key=YOUR_API
 
 https://developers.ria.com/dom/info/13825265?api_key=YOUR_API_KEY
 
-или  `curl -i -X GET "https://developers.ria.com/dom/info/13825265?api_key=YOUR_API_KEY`
-
+или  
+````javascript
+curl -i -X GET "https://developers.ria.com/dom/info/13825265?api_key=YOUR_API_KEY
+````
 В случае успешного выполнения запроса  результат будет со статусом **200 OK**.
 
 Пример успешного ответа:

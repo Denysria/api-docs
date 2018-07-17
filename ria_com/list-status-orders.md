@@ -1,9 +1,9 @@
 #### Перечень статусов заказов
 
 Что бы получить список типов статусов нужно отправив GET запрос на адрес [https://developers.ria.com/ria/basket/status?api_key=YOUR_API_KEY](https://developers.ria.com/ria/basket/status?api_key=YOUR_API_KEY). Результат будет примерно следующим:
-
- ` curl -X GET https://developers.ria.com/ria/basket/status?api_key=YOUR_API_KEY`
-
+````javascript
+ curl -X GET https://developers.ria.com/ria/basket/status?api_key=YOUR_API_KEY
+````
 ```javascript
 {
   "status": true,

@@ -4,8 +4,10 @@
 
 https://developers.ria.com/auto/info?api_key=YOUR_API_KEY&auto_id=**id_объявления**
 
-или  `curl -i -X GET "https://developers.ria.com/auto/info?api_key=YOUR_API_KEY&auto_id=id_объявления"`
-
+или 
+ ````javascript
+ curl -i -X GET "https://developers.ria.com/auto/info?api_key=YOUR_API_KEY&auto_id=id_объявления"
+````
 Он состоит из:
 
  * **info** — название метода API, к которому Вы хотите обратиться.
@@ -22,8 +24,10 @@ https://developers.ria.com/auto/info?api_key=YOUR_API_KEY&auto_id=**id_объя�
 
 https://developers.ria.com/auto/info?api_key=YOUR_API_KEY&auto_id=19050985
 
-или  `curl -i -X GET "https://developers.ria.com/auto/info?api_key=YOUR_API_KEY&auto_id=19050985"`
-
+или  
+````javascript
+curl -i -X GET "https://developers.ria.com/auto/info?api_key=YOUR_API_KEY&auto_id=19050985"
+````
 В случае успешного выполнения запроса  результат будет со статусом **200 OK**.
 
 Пример успешного ответа:

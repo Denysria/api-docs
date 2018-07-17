@@ -10,9 +10,9 @@
 - *operation_type* - тип операции
 
 или
-`curl -X GET "https://developers.ria.com/dom/options?category=id&realty_type=id&operation_type=id&` 
-`api_key=YOUR_API_KEY" -H "accept: application/json"`
-
+````javascript
+curl -X GET "https://developers.ria.com/dom/options?category=id&realty_type=id&operation_type=id&api_key=YOUR_API_KEY" -H "accept: application/json"
+````
 
 Для получение информации на украинском языке нужно добавить параметр *lang_id=4*
 
@@ -23,12 +23,13 @@
 Допусти Вам нужно получить список характеристик объекта 'Дома', а тип недвижимости - 'Дачи', тип операции - 'Продажа'
 
 Данный запрос будет выглядеть так:
-
+````javascript
 https://developers.ria.com/dom/options?category=4&realty_type=7&operation_type=1&api_key=YOUR_API_KEY
-
-или `curl -X GET "https://developers.ria.com/dom/options?category=4&realty_type=7&operation_type=1&`
-`api_key=YOUR_API_KEY" -H "accept: application/json"`
-
+````
+или 
+````javascript
+curl -X GET "https://developers.ria.com/dom/options?category=4&realty_type=7&operation_type=1&api_key=YOUR_API_KEY" -H "accept: application/json"
+````
 Результат будет следующим:
 ```json
 [

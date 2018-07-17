@@ -64,14 +64,15 @@ https://developers.ria.com/dom/search?api_key=YOUR_API_KEY&PARAMETERS
 
 [https://developers.ria.com/auto/search?api_key=YOUR_API_KEY&category=1&realty_type=2&operation_type=1....](https://developers.ria.com/dom/search?category=1&realty_type=2&operation_type=1&state_id=10&city_id=10&district_id=15187&district_id=15189&district_id=15188&characteristic[209][from]=1&characteristic[209][to]=3&characteristic[214][from]=60&characteristic[214][to]=90&characteristic[216][from]=30&characteristic[216][to]=50&characteristic[218][from]=4&characteristic[218][to]=9&characteristic[227][from]=3&characteristic[227][to]=7&characteristic[443]=442&characteristic[234][from]=20000&characteristic[234][to]=90000&characteristic[242]=239&characteristic[273]=273&characteristic[1437]=1434&api_key=YOUR_API_KEY)
 
-или `curl -X GET "https://developers.ria.com/dom/search?category=1&realty_type=2&operation_type=1&`
-`state_id=10&``city_id=10&district_id=15187&district_id=15189&district_id=15188&characteristic[209][from]=1&characteristic[209][to]=3&`
-`characteristic[214][from]=60&characteristic[214][to]=90&characteristic[216][from]=30&characteristic[216][to]=50&`
-`characteristic[218][from]=4&characteristic[218][to]=9&characteristic[227][from]=3&characteristic[227][to]=7&`
-`characteristic[443]=442&characteristic[234][from]=20000&characteristic[234][to]=90000&`
-`characteristic[242]=239&characteristic[273]=273&characteristic[1437]=1434&`
-`api_key=YOUR_API_KEY" -H "accept: application/json"`
-
+или 
+````javascript
+curl -X GET "https://developers.ria.com/dom/search?category=1&realty_type=2&operation_type=1&state_id=10&city_id=10&district_id=15187&district_id=15189&district_id=15188&characteristic[209][from]=1&characteristic[209][to]=3&
+characteristic[214][from]=60&characteristic[214][to]=90&characteristic[216][from]=30&characteristic[216][to]=50&
+characteristic[218][from]=4&characteristic[218][to]=9&characteristic[227][from]=3&characteristic[227][to]=7&
+characteristic[443]=442&characteristic[234][from]=20000&characteristic[234][to]=90000&
+characteristic[242]=239&characteristic[273]=273&characteristic[1437]=1434&
+api_key=YOUR_API_KEY" -H "accept: application/json"
+````
 В случае успешного выполнения запроса по указанным параметрам результат будет со статусом **200 OK**.
 
 Пример успешного ответа:

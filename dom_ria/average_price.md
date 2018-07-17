@@ -127,13 +127,13 @@
 Детальную информацию про применение этих параметров можно получить с помощью стандарта DeFacto **swagger 2.0** [здесь](http://swagger.ria.com/ui/?api=dom/dom_average_price)
 
 Пример успешного запроса:
-
-    https://developers.ria.com/dom/average_price?category=1&sub_category=2&operation=1&state_id=1&city_id=1&date_from=2017-06&date_to=2017-07&api_key=YOUR API KEY
-
+````javascript
+  https://developers.ria.com/dom/average_price?category=1&sub_category=2&operation=1&state_id=1&city_id=1&date_from=2017-06&date_to=2017-07&api_key=YOUR API KEY
+````
 или
-
+````javascript
     curl -X GET "https://developers.ria.com/dom/average_price?category=1&sub_category=2&operation=1&state_id=1&city_id=1&date_from=2017-06&date_to=2017-07&api_key=YOUR API KEY" -H "accept: application/json"
-
+````
 Пример успешного ответа:
 
     {
