@@ -49,7 +49,7 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = u'API RIA.com'
+project = u'Developers.RIA.com'
 copyright = u' (c) 2018 RIA.com'
 
 # The version info for the project you're documenting, acts as replacement for
