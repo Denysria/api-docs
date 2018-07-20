@@ -1088,35 +1088,31 @@
 </table> 
 
 
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+
+Here's a grid table followed by a simple table:
+
 +------------------------+------------+----------+----------+
-|  Имя поля	           | Тип        | Описание   | Пример   |
+| Header row, column 1   | Header 2   | Header 3 | Header 4 |
+| (header rows optional) |            |          |          |
 +========================+============+==========+==========+
-|   * year            |   number   | Год выпуска вашего авто |    2016     |
+| body row 1, column 1   | column 2   | column 3 | column 4 |
 +------------------------+------------+----------+----------+
-|   * price           |   object   | Цена, за которою вы желаете продать ваше авто  |                      |
-|    value            |   number   | Значение           |     80000                 |
-|    currency         |   object   | Валюта в которой вы продаете ваш автомобиль |                      |
-|    id               |   number   | ID валюты в которой вы продаете ваш автомобиль |      1                |
-|                     |            |                     |                      |
-|    *categories      |   object   |  Тип транспорта |                      |
-|    main             |   object   |   |                      |
-|    id               |   number   |  ID типа транспорта |       1               |
-|                     |            |                     |                      |
-|   * brand           |   object   |  Марка автомобиля    |                      |
-|    id               |   number   |  ID марки автомобиля    |      5                |
-|                     |            |                     |                      |
-|   * model           |   object   |   Модель автомобиля         |                      |
-|    id               |   number   |  ID модели автомобиля          |      963                |
-|                     |            |                     |                      |
-|    modification     |   string   | Название модификации вашего автомобиля     |      V12 AMG B-turbo               |
-|                     |            |                     |                      |
-|    *body            |   object   |  Тип кузова     |                      |
-|    id               |   number   |  ID типа кузова     |        6             |
-|                     |            |                     |                      |
-|    *mileage         |   number   |    Пробег в тыс.км. |       32               |
-|                     |            |                     |                      |
-|   * region          |   object   | Область в которой вы продаете автомобиль|                          |
-|    id               |   number   | ID области в которой вы продаете автомобиль|           10               |
-|                     |            |                     |                      |
-|   * city            |   object   | Город в котором вы продаете автомобиль |                          |
-|    id               |   number   | ID города в котором вы продаете автомобиль |           10               |
+| body row 2             | Cells may span columns.          |
++------------------------+------------+---------------------+
+| body row 3             | Cells may  | - Table cells       |
++------------------------+ span rows. | - contain           |
+| body row 4             |            | - body elements.    |
++------------------------+------------+----------+----------+
+| body row 5             | Cells may also be     |          |
+|                        | empty: ``-->``        |          |
++------------------------+-----------------------+----------+
