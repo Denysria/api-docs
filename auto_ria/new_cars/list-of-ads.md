@@ -1,8 +1,10 @@
 ## Список всех объявлений
 
 Чтобы получить список объявлений, Вам необходимо выполнить GET запрос такого вида:
-
-([https://developers.ria.com/auto/new/autos?user_id=Ваш id&api_key=YOUR_API_KEY](https://developers.ria.com/auto/new/autos?user_id=Ваш id&api_key=YOUR_API_KEY)) , где *user_id* - Ваш ID в системе RIA.com, *api_key* - Ваш ключ.
+````rest
+https://developers.ria.com/auto/new/autos?user_id=Ваш id&api_key=YOUR_API_KEY
+````
+, где *user_id* - Ваш ID в системе RIA.com, *api_key* - Ваш ключ.
 
 **Пример запроса**
 `https://developers.ria.com/auto/new/autos?user_id=4784009&api_key=YOUR_API_KEY`
