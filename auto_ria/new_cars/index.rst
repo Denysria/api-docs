@@ -10,4 +10,5 @@ AUTO.RIA новые авто
    new-ad
    editing-an-ad
    remove-ad
+   statistics
 
