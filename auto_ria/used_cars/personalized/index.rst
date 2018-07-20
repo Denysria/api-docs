@@ -6,8 +6,6 @@
 Полное описание сервиса "Работа с обьявления" описаний с помощью стандарта **DeFacto swagger 2.0** _`здесь <http://swagger.ria.com/ui/?api=auto/advertisements#/>`_
 
 
-* ``canonical_url`` String. This will specify a `canonical url <https://en.wikipedia.org/wiki/Canonical_link_element>`__
-  to let search engines know they should give higher ranking to latest version of the docs.
 
 
 
