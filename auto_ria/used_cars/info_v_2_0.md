@@ -17,7 +17,7 @@ curl -XGET "https://auto.ria.com/graphql/schema/info?data=type"
 ````
 
 Запрос данных метод info
-(Пока на тесте нужно передавать также куку -H "Cookie: testGraphQLGraphic=1")
+
 
 **Метод info.**
 
@@ -29,7 +29,7 @@ curl -XGET "https://auto.ria.com/graphql/schema/info?data=type"
 
 Запрос: 
 ````javascript
-curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){brand {id}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
+curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){brand {id}}}"}' -H 'Content-Type: application/json''
 ````
 как мы видим формат передаваемого объекта следующий:
 ````javascript
@@ -65,7 +65,7 @@ id - [агрумент метода info] ID существующего объя
 
 Запрос:
 ````javascript
-curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){ brand {id name} model {name} }}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
+curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){ brand {id name} model {name} }}"}' -H 'Content-Type: application/json''
 ````
 
 Ответ:
@@ -92,7 +92,7 @@ curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){ bra
 
 Запрос: 
 ````javascript
-curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:21519939, userId: 5820722){brand {id} changes {price {date newValue}}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
+curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:21519939, userId: 5820722){brand {id} changes {price {date newValue}}}}"}' -H 'Content-Type: application/json''
 ````
 Пример запроса по изменению цены. Поля для запроса доступны в схеме.
 
@@ -173,5 +173,3 @@ userId - (аргумент 2) ID юзера
   }
 }
 ````
-Графическая оболочка GraphQL
-(Пока на тесте нужно засетапить куку **testGraphQLGraphic=1**)
