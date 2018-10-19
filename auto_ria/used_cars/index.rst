@@ -11,4 +11,4 @@ AUTO.RIA б.у авто
    average-price
    info
    personalized/index
-   info_v_2_0
+  
