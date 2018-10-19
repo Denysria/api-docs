@@ -6,13 +6,13 @@
 Что бы получить схему метода info с описанием полей
 
 Запрос: 
-``
+````javascript
 curl -XGET "https://auto.ria.com/graphql/schema/info?data=desc"
 ``
 Что бы получить схему метода info с типами данных полей
 
 Запрос: 
-``
+````javascript
 curl -XGET "https://auto.ria.com/graphql/schema/info?data=type"
 ``
 
@@ -28,11 +28,11 @@ curl -XGET "https://auto.ria.com/graphql/schema/info?data=type"
 Исходя из схемы мы видим что в поле brand есть поле id. Пишем запрос...
 
 Запрос: 
-``
+````javascript
 curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){brand {id}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 ``
 как мы видим формат передаваемого объекта следующий:
-``
+````javascript
 {
   "query":"{info(id:22587987){brand {id}}}"
 }
@@ -49,8 +49,7 @@ id - [агрумент метода info] ID существующего объя
 
 
 Ответ:
-``
-{
+````javascript{
   "data": {
     "info": {
       "brand": {
@@ -65,12 +64,12 @@ id - [агрумент метода info] ID существующего объя
 а весь запрос так:
 
 Запрос:
-``
+````javascript
 curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){ brand {id name} model {name} }}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 ``
 
 Ответ:
-``
+````javascript
 {
   "data": {
     "info": {
@@ -92,13 +91,13 @@ curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){ bra
 Такие как: история изменений (цены и описания), комментарии к объявлению.
 
 Запрос: 
-``
+````javascript
 curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:21519939, userId: 5820722){brand {id} changes {price {date newValue}}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 ``
 Пример запроса по изменению цены. Поля для запроса доступны в схеме.
 
 Ответ:
-``
+````javascript
 {
     "data":{
         "info":{
@@ -132,7 +131,7 @@ curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:21519939, user
 **Комментарии к объявлениям**
 
 Запрос:
-``
+````javascript
 curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id: 21519939, userId: 5820722) {brand {id}wall{comments{permission propose {user{id} text date}}}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 ``
 
