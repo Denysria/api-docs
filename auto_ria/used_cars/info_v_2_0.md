@@ -1,14 +1,15 @@
 
-**Схема метода info**
+Схема метода info
+========
 
 Метод возвращает данные про объявление по ID авто.
 Что бы получить схему метода info с описанием полей
 
-Запрос: curl -XGET "http://localhost:1955/schema/info?data=desc"
+Запрос: curl -XGET "https://auto.ria.com/graphql/schema/info?data=desc"
 
 Что бы получить схему метода info с типами данных полей
 
-Запрос: curl -XGET "http://localhost:1955/schema/info?data=type"
+Запрос: curl -XGET "https://auto.ria.com/graphql/schema/info?data=type"
 
 
 Запрос данных метод info
@@ -20,7 +21,7 @@
 Например если нужны brand.id.
 Исходя из схемы мы видим что в поле brand есть поле id. Пишем запрос...
 
-Запрос: curl -XPOST "http://localhost:1955" -d '{"query":"{info(id:22587987){brand {id}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
+Запрос: curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){brand {id}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 
 как мы видим формат передаваемого объекта следующий:
 {
@@ -52,7 +53,7 @@ id - [агрумент метода info] ID существующего объя
 кроме запрашиваемых данных. Исходя со схеми запроса, они будут выглядеть так { brand {id name} model {name} },
 а весь запрос так:
 
-Запрос: curl -XPOST "http://localhost:1955" -d '{"query":"{info(id:22587987){ brand {id name} model {name} }}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
+Запрос: curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:22587987){ brand {id name} model {name} }}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 
 
 Ответ:
@@ -71,11 +72,13 @@ id - [агрумент метода info] ID существующего объя
   }
 }
 
-Метод info. Данные с двумя аргументами (id и userId)
+**Метод info.** 
+
+Данные с двумя аргументами (id и userId)
 Если в метод инфо передать еще один аргумент userId то в ответе мы можем запросить "частную" информацию о объявлении.
 Такие как: история изменений (цены и описания), комментарии к объявлению.
 
-Запрос: curl -XPOST "http://localhost:1955" -d '{"query":"{info(id:21519939, userId: 5820722){brand {id} changes {price {date newValue}}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
+Запрос: curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id:21519939, userId: 5820722){brand {id} changes {price {date newValue}}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 
 Пример запроса по изменению цены. Поля для запроса доступны в схеме.
 
@@ -112,7 +115,7 @@ id - [агрумент метода info] ID существующего объя
 }
 Комментарии к объявлениям
 
-Запрос: curl -XPOST "http://localhost:1955" -d '{"query":"{info(id: 21519939, userId: 5820722) {brand {id}wall{comments{permission propose {user{id} text date}}}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
+Запрос: curl -XPOST "https://auto.ria.com/graphql" -d '{"query":"{info(id: 21519939, userId: 5820722) {brand {id}wall{comments{permission propose {user{id} text date}}}}}"}' -H 'Content-Type: application/json' -H 'Cookie: testGraphQLGraphic=1'
 
 
 info - метод
@@ -154,4 +157,4 @@ userId - (аргумент 2) ID юзера
 }
 
 Графическая оболочка GraphQL
-(Пока на тесте нужно засетапить куку testGraphQLGraphic=1)
+(Пока на тесте нужно засетапить куку **testGraphQLGraphic=1**)
