@@ -17,3 +17,4 @@
    colors
    countries
    other
+   test_api
