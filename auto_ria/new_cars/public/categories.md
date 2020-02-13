@@ -1,6 +1,6 @@
 ## Типы транспорта
 
-Что бы получить список типов транспорта нужно отправив GET запрос на адрес [https://developers.ria.com/auto/categories/?api_key=YOUR_API_KEY](https://developers.ria.com/auto/categories/?api_key=YOUR_API_KEY). Результат будет примерно следующим:
+Что бы получить список типов транспорта нужно отправив GET запрос на адрес [https://developers.ria.com/auto/categories/?api_key=YOUR_API_KEY](https://developers.ria.com/auto/categories/?api_key=YOUR_API_KEY). Результат будет следующим:
 ```javascript
 [
     { name: "Легковые", value: 1 },
