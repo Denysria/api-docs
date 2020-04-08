@@ -1,6 +1,6 @@
 ### Модели
 
-Модели зависят от типов транспорта и марок. Следовательно список марок можно получить по адресу `http://api.auto.ria.com/categories/:categoryId/marks/:markId/models?api_key=YOUR_API_KEY`, где *categoryId* - идентификатор типа транспорта а *markId* - идентификатор марки, *api_key*- Ваш ключ.
+Модели зависят от типов транспорта и марок. Следовательно список марок можно получить по адресу `http://api.auto.ria.com/auto/categories/:categoryId/marks/:markId/models?api_key=YOUR_API_KEY`, где *categoryId* - идентификатор типа транспорта а *markId* - идентификатор марки, *api_key*- Ваш ключ.
 
 Например, для мотоциклов BMW ([https://developers.ria.com/auto/categories/2/marks/9/models?api_key=YOUR_API_KEY](https://developers.ria.com/auto/categories/2/marks/9/models?api_key=YOUR_API_KEY)), список моделей будет следующим:
 ```javascript
