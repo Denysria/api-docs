@@ -9,4 +9,4 @@
    editing-an-ad
    remove-ad
    statistics
-   Create calls-api
+   calls-api
