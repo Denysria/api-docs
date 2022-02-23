@@ -23,7 +23,7 @@ https://developers.ria.com/auto/search?api_key=YOUR_API_KEY&PARAMETERS
  {
   "additional_params": {
     "lang_id": 2,                                             // Русский язык
-    "page": 0,                                                // Порядеовый номер страницы
+    "page": 0,                                                // Порядковый номер страницы
     "view_type_id": 0,
     "target": "search",
     "section": "auto",                                        // Поиск по авто
@@ -105,7 +105,7 @@ https://developers.ria.com/auto/search?api_key=YOUR_API_KEY&PARAMETERS
     {
    "additional_params": {
      "lang_id": 2,                                  // Русский язык
-     "page": 0,                                     // Порядеовый номер страницы
+     "page": 0,                                     // Порядковый номер страницы
      "view_type_id": 0,
      "target": "search",
      "section": "auto",                             // Поиск по авто
